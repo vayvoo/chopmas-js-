@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chopmas Production :)</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header class="app-header">
+        <h1 class="header__title">Pitsa buyurtma qilish</h1>
+    </header>
+    <main class="site-main">
+        <section class="detail">
+            <div class="pizza-name">
+                <h2 class="pizza-name__title">Noni qanday bo'lsin</h2>
+                <select class="select" name="pizza-name" id="pizza-type">
+                    <option value="Yupqa">Yupqa</option>
+                    <option value="Qalin">Qalin</option>
+                    <option value="Buxanka">Buxanka</option>
+                </select>
+            </div>
+            <div class="pizza-size">
+                <h2 class="pizza-size__title">Kattaligi</h2>
+                <ul class="pizza-size__list">
+                    <li class="pizza-size__item"><input class="pizza-size-radio" type="radio" name="pizza-size" id="25sm" value="25sm"><label for="25sm">25sm</label></li>
+                    <li class="pizza-size__item"><input class="pizza-size-radio" type="radio" name="pizza-size" id="30sm" value="30sm"><label for="30sm">30sm</label></li>
+                    <li class="pizza-size__item"><input class="pizza-size-radio" type="radio" name="pizza-size" id="35sm" value="35sm"><label for="35sm">35sm</label></li>
+                </ul>
+            </div>
+            <div class="pizza-content">
+                <h2 class="pizza-content__title">Ustiga nima solaylik?</h2>
+                <ul class="pizza-content__list">
+                    <li class="pizza-content__item"><input class="pizza-content__check" type="checkbox" name="pizza-content" id="pomidor" value="Pomidor"><label for="pomidor">Pomidor</label></li>
+                    <li class="pizza-content__item"><input class="pizza-content__check" type="checkbox" name="pizza-content" id="bodring" value="Bodring"><label for="bodring">Bodring</label></li>
+                    <li class="pizza-content__item"><input class="pizza-content__check" type="checkbox" name="pizza-content" id="kurka" value="Kurka go'shti"><label for="kurka">Kurka go'shti</label></li>
+                    <li class="pizza-content__item"><input class="pizza-content__check" type="checkbox" name="pizza-content" id="qoziqorin" value="Qo'ziqorin"><label for="qoziqorin">Qo'ziqorin</label></li>
+                    <li class="pizza-content__item"><input class="pizza-content__check" type="checkbox" name="pizza-content" id="zaytun" value="Zaytun"><label for="zaytun">Zaytun</label></li>
+                    <li class="pizza-content__item"><input class="pizza-content__check" type="checkbox" name="pizza-content" id="qazi" value="Qazi"><label for="qazi">Qazi</label></li>
+                </ul>
+            </div>
+            <div class="pizza-extra">
+                <h2 class="pizza-extra__title">Qo'shimchalar</h2>
+                <ul class="pizza-extra__list">
+                    <li class="pizza-extra__item"><input class="pizza-extra__check" type="checkbox" name="pizza-extra" id="achchiq" value="Achchiq"><label for="achchiq">Achchiq</label></li>
+                    <li class="pizza-extra__item"><input class="pizza-extra__check" type="checkbox" name="pizza-extra" id="sosiska" value="Sosiskali"><label for="sosiska">Sosiskali</label></li>
+                </ul>
+            </div>
+        </section>
+        <aside class="result">
+            <div class="pizza-type">
+                <p class="pizza-type__title">Non: </p>
+                <p class="pizza-type__value" id="pizza-type__id">yupqa</p>
+            </div>
+            <div class="pizza-size-result">
+                <p class="size-result__title">Kattaligi: </p>
+                <p class="size-result__value" id="size-result__id">25sm</p>
+            </div>
+            <div class="pizza-content-result">
+                <p class="content-result__title">Ustida: </p>
+                <ul id="pizza-content" class="content-result__list">
+
+                </ul>
+            </div>
+            <div class="pizza-extra-result">
+                <p class="extra-result__title">Qo'shimcha: </p>
+                <ul class="extra-result__list" id="pizza-extra">
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <script src="js/main.js"></script>
+    </body>
+    </html>
